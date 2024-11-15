@@ -7,12 +7,11 @@ import pathlib
 import textwrap
 from PIL import Image
 
-
 import google.generativeai as genai
 
+api_key = os.getenv("API_KEY_GOOGLE")
 
-
-genai.configure(api_key='AIzaSyCmcO3Tqa0ukp1geHMgriCITyYqs0Xce6g')
+genai.configure(api_key=api_key)
 
 ## Function to the model and get respones
 
