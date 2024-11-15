@@ -1,0 +1,6 @@
+streamlit
+os
+pathlib
+textwrap
+PIL
+google.generativeai
