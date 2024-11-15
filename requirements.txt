@@ -3,4 +3,4 @@ os
 pathlib
 textwrap
 PIL
-google.generativeai
+google-generative-ai
