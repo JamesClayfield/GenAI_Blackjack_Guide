@@ -15,12 +15,25 @@ genai.configure(api_key=api_key)
 
 ## Function to the model and get respones
 
+Task = """ 
+Your Task is to evaluate the probability of getting a specified hand in texas hold em poker. 
+You are shown an image. This image shows 2 poker cards in front of you. This is the hand you are meant to evaluate. 
+The picture also shows 5 community cards. These 5 cards are either in the state of concealed, flop, turn or river. 
+
+Based on the cards you see, the rules of texas hold em poker and bayesian probability, calculate the probability 
+of receiving the hand in question by the time the river card is revealed.
+
+"""
+
+
+
+
 def get_gemini_response(input,image):
     model = genai.GenerativeModel('gemini-1.5-flash')
     if input!="":
-       response = model.generate_content([input,image])
+       response = model.generate_content([Task, input,image])
     else:
-       response = model.generate_content(image)
+       response = model.generate_content(Task, image)
     return response.text
 
 ##initialize our streamlit app
