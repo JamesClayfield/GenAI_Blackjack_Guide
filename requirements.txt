@@ -1,6 +1,3 @@
 streamlit
-os
-pathlib
-textwrap
-PIL
+Pillow
 google-generative-ai
