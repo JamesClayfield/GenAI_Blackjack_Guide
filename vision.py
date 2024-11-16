@@ -118,14 +118,7 @@ def get_gemini_response(input,image):
 
 
 
-
-
-st.header("Blackjack Strategy Optimizer")
-input = st.text_input("Input Prompt: ",key="input")
-
-
-
-submit = st.button("What move should I make?")
+submit = st.button("Consult")
 
 ## If ask button is clicked
 
