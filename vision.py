@@ -111,15 +111,16 @@ If not provided card numbers. You can also answer questions related to the game 
 
 
 
-def get_gemini_response(input,image):
-    model = genai.GenerativeModel('gemini-1.5-pro')
+def get_gemini_response(strategy_guide, Task_2, Task, input,image):
+    flash = genai.GenerativeModel('gemini-1.5-flash')
+    pro = genai.GenerativeModel('gemini-1.5-pro')
     if input!="":
-       response = model.generate_content([strategy_guide, image, Task, input])
+       response = pro.generate_content([strategy_guide, image, Task, input])
     else:
-       response = model.generate_content([strategy_guide, image, Task])
+       response = pro.generate_content([strategy_guide, image, Task])
     return response.text
     if uploaded_file == None:
-        response = model.generate_content([strategy_guide, Task_2, input])
+        response = flash.generate_content([strategy_guide, Task_2, input])
 
 ##initialize our streamlit app
 
@@ -131,6 +132,6 @@ submit = st.button("Consult")
 
 if submit:
     
-    response=get_gemini_response(input,image)
+    response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
     st.subheader("The Response is")
     st.write(response)
