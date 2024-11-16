@@ -19,7 +19,12 @@ api_key = os.getenv("API_KEY_GOOGLE")
 genai.configure(api_key=api_key)
 
 
-st.header("Blackjack Strategy Optimizer")
+st.header("Odds Master")
+
+st.markdown("""
+Round off the House Edge
+
+    """)
 
 #User prompt is input here
 input = st.text_input("Input Prompt: ",key="input")
@@ -50,6 +55,8 @@ You have been first shown a black jack strategy guide. This shows which cards yo
 
 You are shown an image. The 2 or more cards face up are your hand. This is the hand you are meant to evaluate.
 The pair of cards where one is face up and the other is face down are the dealer's cards. King (K), Queen (Q), Jack (J) are equal to 10.
+Read the number from the top left of the card. Be careful not to mix up 6 and 9.
+
 
 Please tell me which cards you see in the dealer's hand. Please also tell me the cards you are holding.
 
