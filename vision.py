@@ -58,7 +58,7 @@ def get_gemini_response(input,image):
     if input!="":
        response = model.generate_content([strategy_guide, image, Task, input])
     else:
-       response = model.generate_content(Task, image)
+       response = model.generate_content([strategy_guide, image, Task])
     return response.text
 
 ##initialize our streamlit app
