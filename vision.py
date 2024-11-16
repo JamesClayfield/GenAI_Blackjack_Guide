@@ -33,7 +33,7 @@ input = st.text_input("Input Prompt: ",key="input")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 #Uploading image and turning 90 degrees
-image = None 
+image = None
 if uploaded_file is not None:
     image = Image.open(uploaded_file).rotate(-90, expand=True)
     st.image(image, caption="Uploaded Image.", use_column_width=True)
@@ -55,7 +55,7 @@ You have been first shown a black jack strategy guide. This shows which cards yo
 
 You are shown an image. The 2 or more cards face up are your hand. This is the hand you are meant to evaluate.
 The pair of cards where one is face up and the other is face down are the dealer's cards. King (K), Queen (Q), Jack (J) are equal to 10.
-Read the number from the top left of the card. Be careful not to mix up 6 and 9.
+ead the number from the top left of the card. The dealer's cards are upside down Be careful not to mix up 6 and 9.
 
 
 Please tell me which cards you see in the dealer's hand. Please also tell me the cards you are holding.
@@ -111,27 +111,25 @@ If not provided card numbers. You can also answer questions related to the game 
 
 
 
-def get_gemini_response(strategy_guide, Task_2, Task, input,image):
-    flash = genai.GenerativeModel('gemini-1.5-flash')
-    pro = genai.GenerativeModel('gemini-1.5-pro')
-    if input!="":
-       response = pro.generate_content([strategy_guide, image, Task, input])
-    else:
-       response = pro.generate_content([strategy_guide, image, Task])
-    return response.text
-    if uploaded_file == None:
-        response = flash.generate_content([strategy_guide, Task_2, input])
+def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
+    try:
+        # Initialize generative models
+        flash = genai.GenerativeModel('gemini-1.5-flash')
+        pro = genai.GenerativeModel('gemini-1.5-pro')
 
-##initialize our streamlit app
+        # Prepare content list dynamically
+        content_list = [strategy_guide, Task]
+        if input.strip():  # Check if input is not empty
+            content_list.append(input)
+        if image:  # Include image if provided
+            content_list.insert(1, image)
 
+        response = pro.generate_content(content_list)
 
+        if not image:
+            response = flash.generate_content([strategy_guide, Task_2, input])
 
-submit = st.button("Consult")
-
-## If ask button is clicked
-
-if submit:
-    
-    response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
-    st.subheader("The Response is")
-    st.write(response)
+        return response.text  # Return the text of the response
+    except Exception as e:
+        st.error(f"An error occurred while generating the response: {e}")
+        return None
