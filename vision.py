@@ -43,8 +43,8 @@ You have been first shown a black jack strategy guide. This shows which cards yo
 - Red (D) means the player must Double Down
 - Blue (SP) means player must Split
 
-You are shown an image. The 2 or more cards at the bottom of the image are your hand. This is the hand you are meant to evaluate.
-The cards at the top of the image are the dealer's cards. King (K), Queen (Q), Jack (J) are equal to 10.
+You are shown an image. The 2 or more cards face up are your hand. This is the hand you are meant to evaluate.
+The pair of cards where one is face up and the other is face down are the dealer's cards. King (K), Queen (Q), Jack (J) are equal to 10.
 
 Please tell me which cards you see in the dealer's hand. Please also tell me the cards you are holding.
 
