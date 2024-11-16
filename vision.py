@@ -133,3 +133,18 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
     except Exception as e:
         st.error(f"An error occurred while generating the response: {e}")
         return None
+
+
+    if submit:
+    # Ensure required data is available
+    if not strategy_guide:
+        st.error("The strategy guide could not be loaded.")
+    elif not input.strip() and not uploaded_file:
+        st.error("Please provide an input prompt or upload an image.")
+    else:
+        # Generate response
+        response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
+
+        if response:
+            st.subheader("The Response is")
+            st.write(response)
