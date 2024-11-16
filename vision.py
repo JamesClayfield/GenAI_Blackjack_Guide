@@ -5,13 +5,27 @@ import streamlit as st
 import os
 import pathlib
 import textwrap
-from PIL import Image
+from PIL import Image, ExifTags
 
 import google.generativeai as genai
 
 api_key = os.getenv("API_KEY_GOOGLE")
 
 genai.configure(api_key=api_key)
+
+
+#uploading the image
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
+
+image = None 
+if uploaded_file is not None:
+    image = Image.open(uploaded_file).rotate(-90, expand=True)
+    st.image(image, caption="Uploaded Image.", use_column_width=True)
+
+
+
+strategy_guide = strategy_guide = genai.upload_file(path='Blackjack Strategy Guide.pdf', display_name='Strategy Guide')
+
 
 ## Function to the model and get respones
 
@@ -34,7 +48,6 @@ Based on the cards you see and the provided blackjack strategy guide, should I H
 
 The format of your response should look like this:
 
---------Blackjack Move Optimizer--------
 
 The dealer is showing a **W**
 
@@ -63,22 +76,16 @@ def get_gemini_response(input,image):
 
 ##initialize our streamlit app
 
-st.set_page_config(page_title="Gemini Image Demo")
+
+
+st.set_page_config(page_title="Blackjack Strategy Optimizer")
 
 st.header("Blackjack Strategy Optimizer")
-input=st.text_input("Input Prompt: ",key="input")
-
-uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
-
-strategy_guide = strategy_guide = genai.upload_file(path='Blackjack Strategy Guide.pdf', display_name='Strategy Guide')
-
-image=""   
-if uploaded_file is not None:
-    image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image.", use_column_width=True)
+input = st.text_input("Input Prompt: ",key="input")
 
 
-submit=st.button("Tell me about the image")
+
+submit = st.button("What move should I make?")
 
 ## If ask button is clicked
 
