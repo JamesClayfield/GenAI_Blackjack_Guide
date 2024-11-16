@@ -9,14 +9,20 @@ from PIL import Image, ExifTags
 
 import google.generativeai as genai
 
+#Setting page title
+st.set_page_config(page_title="Blackjack Strategy Optimizer")
+
+#Getting API from github secrets
 api_key = os.getenv("API_KEY_GOOGLE")
 
+#Setting API Key
 genai.configure(api_key=api_key)
 
 
 #uploading the image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
+#Uploading image and turning 90 degrees
 image = None 
 if uploaded_file is not None:
     image = Image.open(uploaded_file).rotate(-90, expand=True)
@@ -78,7 +84,7 @@ def get_gemini_response(input,image):
 
 
 
-st.set_page_config(page_title="Blackjack Strategy Optimizer")
+
 
 st.header("Blackjack Strategy Optimizer")
 input = st.text_input("Input Prompt: ",key="input")
