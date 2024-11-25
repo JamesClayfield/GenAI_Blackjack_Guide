@@ -55,7 +55,8 @@ The format of each row of the csv is one of the following:
 
 "Dealer's up card: W. Your hand (face value): Z. Optimal play: Double Down, Split, Hit, Stay (depends which)."
 
-First check if the player is holding a specific card combination and check the optimal move based on this.
+If the player is holding an ace or a pair of the same cards, check the optimal move based on this specific card combination.
+
 It it is not a listed combination, check for the face value to find the optimal move.
 
 You are also shown an image. The 2 or more cards next to each other that are face up are your hand. This is the hand you are meant to evaluate.
@@ -68,7 +69,7 @@ Tell me which cards you see in the dealer's hand. Also tell me the cards you are
 
 Your Task is to evaluate the next best move based on the black jack strategy guide you were shown.
 
-Based on the cards you see and the aforementioned instructions, should the user Double Down, Split, Hit or Stand?
+Based on the cards you see and the aforementioned instructions, should the player Double Down, Split, Hit or Stand?
 
 
 The format of your response should look like this:
@@ -105,7 +106,7 @@ It it is not a listed combination, check for the face value to find the optimal 
 Your task is to act as a Blackjack strategy guide. The player can provide you with their cards and the dealer's face card. 
 King (K), Queen (Q), Jack (J) are equal to 10.
 
-Based on the player's cards and the aforementioned instructions, should the user Double Down, Split, Hit or Stand?
+Based on the player's cards and the aforementioned instructions, should the player Double Down, Split, Hit or Stand?
 
 The format of your response should look like this:
 
@@ -142,7 +143,7 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
 
     elif uploaded_file is None:
         if input!="":
-            response = pro.generate_content([strategy_guide, Task_2, input])
+            response = flash.generate_content([strategy_guide, Task_2, input])
         elif input=="":
             response = "No Questions was input. Please ask a question."
     return response.text
