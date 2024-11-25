@@ -59,8 +59,9 @@ If the player is holding an ace or a pair of the same cards, check the optimal m
 
 It it is not a listed combination, check for the face value to find the optimal move.
 
-You are also shown an image. The 2 or more cards next to each other that are face up are your hand. This is the hand you are meant to evaluate.
-The pair of cards where one is face up and the other is face down are the dealer's cards.
+You are also shown an image. The 2 or more cards at the bottom of the image are the player's hand. This is the hand you are meant to evaluate.
+The cards at the top of the image are the dealer's cards.
+
 
 King (K), Queen (Q), Jack (J) are equal to 10.
 Read the number from the top left of the card to identify the face value.
