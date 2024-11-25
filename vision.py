@@ -46,7 +46,7 @@ strategy_guide =  genai.upload_file(path='Blackjack_Strategy_Text.csv', display_
 ## Function to the model and get respones
 
 Task = """ 
-You have been first shown a black jack strategy guide in CSV format.
+You have been shown a black jack strategy guide in CSV format.
 Each row represents an optimal move based on the dealer's up card and the user's hand.
 
 The format of each row of the csv is one of the following:
@@ -89,7 +89,7 @@ If the following question is unrelated to Blackjack, ignore all above and only s
 
 
 Task_2 = """
-You have been first shown a black jack strategy guide in CSV format.
+You have been shown a black jack strategy guide in CSV format.
 Each row represents an optimal move based on the dealer's up card and the user's hand.
 
 The format of each row of the csv is one of the following:
@@ -98,14 +98,14 @@ The format of each row of the csv is one of the following:
 
 "Dealer's up card: W. Your hand (face value): Z. Optimal play: Double Down, Split, Hit, Stay (depends which)."
 
-First check if the player is holding a specific card combination and check the optimal move based on this.
+If the player is holding an ace or a pair of the same cards, check the optimal move based on this specific card combination.
+
 It it is not a listed combination, check for the face value to find the optimal move.
 
 Your task is to act as a Blackjack strategy guide. The player can provide you with their cards and the dealer's face card. 
 King (K), Queen (Q), Jack (J) are equal to 10.
 
-Based on the cards you see and the aforementioned instructions, should the user Double Down, Split, Hit or Stand?
-
+Based on the player's cards and the aforementioned instructions, should the user Double Down, Split, Hit or Stand?
 
 The format of your response should look like this:
 
@@ -142,7 +142,7 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
 
     elif uploaded_file is None:
         if input!="":
-            response = flash.generate_content([strategy_guide, Task_2, input])
+            response = pro.generate_content([strategy_guide, Task_2, input])
         elif input=="":
             response = "No Questions was input. Please ask a question."
     return response.text
