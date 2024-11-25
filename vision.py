@@ -109,41 +109,32 @@ If the following question is unrelated to Casino games, ignore all above and onl
 
 
 def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
-    try:
-        # Initialize generative models
-        flash = genai.GenerativeModel('gemini-1.5-flash')
-        pro = genai.GenerativeModel('gemini-1.5-pro')
+    flash = genai.GenerativeModel('gemini-1.5-flash')
+    pro = genai.GenerativeModel('gemini-1.5-pro')
 
-        # Prepare content list dynamically
-        content_list = [strategy_guide, Task]
-        if input.strip():  # Check if input is not empty
-            content_list.append(input)
-        if image:  # Include image if provided
-            content_list.insert(1, image)
+    if uploaded_file is not None:
+        image = Image.open(uploaded_file)
+        st.image(image, caption="Uploaded Image.", use_column_width=True)
+        
+        response = flash.generate_content(strategy_guide, Task, image, input)
 
-        response = pro.generate_content(content_list)
 
-        if not image:
-            response = flash.generate_content([strategy_guide, Task_2, input])
-
-        return response.text  # Return the text of the response
-    except Exception as e:
-        st.error(f"An error occurred while generating the response: {e}")
-        return None
-
-# Initialize the Streamlit app
-submit = st.button("Consult")
+    elif uploaded_file is None:
+        if input!="":
+            response = flash.generate_content(strategy_guide, Task_2, input)
+        elif input=="":
+            response = "No Questions was input. Please ask a question."
+    return response.text
 
 if submit:
-# Ensure required data is available
-    if not strategy_guide:
-        st.error("The strategy guide could not be loaded.")
-    elif not input.strip() and not uploaded_file:
-        st.error("Please provide an input prompt or upload an image.")
-    else:
-        # Generate response
-        response = get_gemini_response(strategy_guide, Task, input, image)
+    
+    response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
+    st.subheader("The Response is")
+    st.write(response)
 
-        if response:
-            st.subheader("The Response is")
-            st.write(response)
+
+
+
+
+
+
