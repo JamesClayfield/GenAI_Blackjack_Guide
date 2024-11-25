@@ -147,7 +147,7 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
         if input!="":
             response = pro.generate_content([strategy_guide, Task_2, input], generation_config={"temperature" : 0})
         elif input=="":
-            response = "No Questions was input. Please ask a question."
+            response = "No Question was input. Please ask a question."
     return response.text
 
 submit = st.button("Advise me")
