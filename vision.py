@@ -80,8 +80,8 @@ The dealer's face card is **[W]**.
 
 **Based on this, you should **[Decision]**.
 
-**Decision Explanation:**  
-  Explain your choice clearly and concisely without referring to the strategy guide.
+## Decision Explanation:
+Provide a detailed explanation for your decision. Do not reference the strategy guide in your response.
 
 ---
 
