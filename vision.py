@@ -47,46 +47,43 @@ strategy_guide =  genai.upload_file(path='Blackjack_Strategy_Text.csv', display_
 ## Function to the model and get respones
 
 Task = """ 
-Your Task is to evaluate the next best move based on the black jack strategy guide you will be shown and an image showing a blackjack game.
+# Blackjack Move Evaluation Task
 
-You have been shown a black jack strategy guide in CSV format.
-Each row represents an optimal move based on the dealer's up card and the user's hand.
+Your task is to evaluate the next best move in a blackjack game based on the information provided. You will be shown a blackjack strategy guide in CSV format and an image of a blackjack game. 
 
-The format of each row of the csv is one of the following:
+## Inputs:
+1. **Blackjack Strategy Guide (CSV)**: 
+   - Each row describes the optimal move (*Double Down*, *Split*, *Hit*, or *Stand*) based on the dealer's up card and the player's hand.
+   - The format of each row can be:
+     - **Pair of Cards**:  
+       `"Dealer's up card: W. Your cards: X, Y. Optimal play: (Move)."`
+     - **Face Value**:  
+       `"Dealer's up card: W. Your hand (face value): Z. Optimal play: (Move)."`
+   - **Face Card Values**:
+     - King (K), Queen (Q), and Jack (J) are valued as **10**.
+     - Ace (A) can be valued as **1** or **11** based on the game state.
 
-"Dealer's up card: W. Your cards: X, Y. Optimal play: Double Down, Split, Hit, Stay (depends which)."
+2. **Game Image**: 
+   - The **player's hand** is the two cards at the bottom of the image.
+   - The **dealer's hand** is the cards at the top of the image.
 
-"Dealer's up card: W. Your hand (face value): Z. Optimal play: Double Down, Split, Hit, Stay (depends which)."
+## Instructions:
+- Identify the dealer's up card and the player's two cards from the image.
+- If the player's hand includes an Ace or a pair of identical cards, use the specific card combination for optimal play.
+- If no specific combination is listed, calculate the face value of the player's hand to find the optimal move.
+- Determine whether the player should *Double Down*, *Split*, *Hit*, or *Stand* based on these factors.
 
-You are also shown an image. The pair of two cards at the bottom of the image are the player's hand.
-The cards at the top of the image are the dealer's cards.
+## Output Format:
+- **The dealer's face card is [W].**
+- **You are holding a [X] and [Y], for a total face value of [Z].**
+- **Based on this, you should [Decision].**
+- **Decision Explanation:**  
+  Explain your choice clearly and concisely without referring to the strategy guide.
 
-If the player is holding an ace or a pair of the same cards, check the optimal move based on this specific card combination.
+---
 
-It it is not a listed combination, check for the face value to find the optimal move.
-
-
-King (K), Queen (Q), Jack (J) are equal to 10.
-
-
-Tell me which cards you see in the dealer's hand. Also tell me the cards you are holding.
-
-Based on the cards you see and the aforementioned instructions, should the player Double Down, Split, Hit or Stand?
-
-The format of your response should look like this:
-
-The dealer's face card is **W**.
-
-You are holding a **X** and **Y** for a total face value of **Z**.
-
-Based on this you should **(action based on the strategy guide)** !
-
-**Decision Explanation:**
-
-Explain your answer here in detail. Do not mention the strategy guide in your answer.
-
-If the following question is unrelated to Blackjack, ignore all above and only say this: "The query seems to be unrelated to casino games. Please ask a related question."
-
+If the question is unrelated to blackjack, respond only with:  
+**"The query seems to be unrelated to casino games. Please ask a related question."**
 """
 
 
@@ -135,7 +132,7 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        #st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
+        st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
         
         if input!="":
             response = pro.generate_content([strategy_guide, Task, input, image])
