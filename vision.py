@@ -139,13 +139,13 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
         st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
         
         if input!="":
-            response = pro.generate_content([strategy_guide, Task, input, image])
+            response = pro.generate_content([strategy_guide, Task, input, image], generation_config={"temperature" : 0})
         else:
-            response = pro.generate_content([strategy_guide, Task, image])
+            response = pro.generate_content([strategy_guide, Task, image], generation_config={"temperature" : 0})
 
     elif uploaded_file is None:
         if input!="":
-            response = pro.generate_content([strategy_guide, Task_2, input])
+            response = pro.generate_content([strategy_guide, Task_2, input], generation_config={"temperature" : 0})
         elif input=="":
             response = "No Questions was input. Please ask a question."
     return response.text
