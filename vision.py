@@ -73,10 +73,14 @@ Your task is to evaluate the next best move in a blackjack game based on the inf
 - Determine whether the player should *Double Down*, *Split*, *Hit*, or *Stand* based on these factors.
 
 ## Output Format:
-- **The dealer's face card is [W].**
-- **You are holding a [X] and [Y], for a total face value of [Z].**
-- **Based on this, you should [Decision].**
-- **Decision Explanation:**  
+
+The dealer's face card is **[W]**.
+
+**You are holding a **[X]** and **[Y]**, for a total face value of **[Z]**.
+
+**Based on this, you should **[Decision]**.
+
+**Decision Explanation:**  
   Explain your choice clearly and concisely without referring to the strategy guide.
 
 ---
