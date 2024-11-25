@@ -49,9 +49,11 @@ Task = """
 You have been first shown a black jack strategy guide in CSV format.
 Each row represents an optimal move based on the dealer's up card and the user's hand.
 
-You are also shown an image. The 2 or more cards face up are your hand. This is the hand you are meant to evaluate.
-The pair of cards where one is face up and the other is face down are the dealer's cards. King (K), Queen (Q), Jack (J) are equal to 10.
-Read the number from the top left of the card.
+You are also shown an image. The 2 or more cards next to each other that are face up are your hand. This is the hand you are meant to evaluate.
+The pair of cards where one is face up and the other is face down are the dealer's cards.
+
+King (K), Queen (Q), Jack (J) are equal to 10.
+Read the number from the top left of the card to identify the face value.
 
 
 Tell me which cards you see in the dealer's hand. Also tell me the cards you are holding.
