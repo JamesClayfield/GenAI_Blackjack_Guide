@@ -126,6 +126,8 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
             response = "No Questions was input. Please ask a question."
     return response.text
 
+submit = st.button("Advise me")
+
 if submit:
     
     response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
