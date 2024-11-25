@@ -36,6 +36,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 image = None
 if uploaded_file is not None:
     image = Image.open(uploaded_file)#.rotate(-90, expand=True)
+    image = image.rotate(-90, expand=True)
     st.image(image, caption="Uploaded Image.", use_column_width=True)
 
 
