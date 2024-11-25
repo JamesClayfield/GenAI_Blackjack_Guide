@@ -116,12 +116,14 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
         image = Image.open(uploaded_file)
         st.image(image, caption="Uploaded Image.", use_column_width=True)
         
-        response = flash.generate_content(strategy_guide, Task, image, input)
-
+        if input!="":
+            response = flash.generate_content([strategy_guide, Task, input], image)
+        else:
+            response = model.generate_content([strategy_guide, Task], image)
 
     elif uploaded_file is None:
         if input!="":
-            response = flash.generate_content(strategy_guide, Task_2, input)
+            response = flash.generate_content([strategy_guide, Task_2, input])
         elif input=="":
             response = "No Questions was input. Please ask a question."
     return response.text
