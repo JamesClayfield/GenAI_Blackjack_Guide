@@ -64,7 +64,7 @@ It it is not a listed combination, check for the face value to find the optimal 
 
 
 King (K), Queen (Q), Jack (J) are equal to 10.
-Read the number from the top left of the card to identify the face value.
+
 
 Tell me which cards you see in the dealer's hand. Also tell me the cards you are holding.
 
