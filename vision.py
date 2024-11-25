@@ -143,7 +143,7 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
 
     elif uploaded_file is None:
         if input!="":
-            response = flash.generate_content([strategy_guide, Task_2, input])
+            response = pro.generate_content([strategy_guide, Task_2, input])
         elif input=="":
             response = "No Questions was input. Please ask a question."
     return response.text
