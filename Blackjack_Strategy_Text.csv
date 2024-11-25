@@ -1,0 +1,321 @@
+Blackjack Strategic Options
+Dealer's up card: 2. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 3. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 4. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 5. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 6. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 7. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 8. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 9. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 10. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: A. Your hand (face value): 17+. Optimal play: Stay.
+Dealer's up card: 2. Your hand (face value): 16. Optimal play: Stay.
+Dealer's up card: 3. Your hand (face value): 16. Optimal play: Stay.
+Dealer's up card: 4. Your hand (face value): 16. Optimal play: Stay.
+Dealer's up card: 5. Your hand (face value): 16. Optimal play: Stay.
+Dealer's up card: 6. Your hand (face value): 16. Optimal play: Stay.
+Dealer's up card: 7. Your hand (face value): 16. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 16. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 16. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 16. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 16. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 15. Optimal play: Stay.
+Dealer's up card: 3. Your hand (face value): 15. Optimal play: Stay.
+Dealer's up card: 4. Your hand (face value): 15. Optimal play: Stay.
+Dealer's up card: 5. Your hand (face value): 15. Optimal play: Stay.
+Dealer's up card: 6. Your hand (face value): 15. Optimal play: Stay.
+Dealer's up card: 7. Your hand (face value): 15. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 15. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 15. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 15. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 15. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 14. Optimal play: Stay.
+Dealer's up card: 3. Your hand (face value): 14. Optimal play: Stay.
+Dealer's up card: 4. Your hand (face value): 14. Optimal play: Stay.
+Dealer's up card: 5. Your hand (face value): 14. Optimal play: Stay.
+Dealer's up card: 6. Your hand (face value): 14. Optimal play: Stay.
+Dealer's up card: 7. Your hand (face value): 14. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 14. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 14. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 14. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 14. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 13. Optimal play: Stay.
+Dealer's up card: 3. Your hand (face value): 13. Optimal play: Stay.
+Dealer's up card: 4. Your hand (face value): 13. Optimal play: Stay.
+Dealer's up card: 5. Your hand (face value): 13. Optimal play: Stay.
+Dealer's up card: 6. Your hand (face value): 13. Optimal play: Stay.
+Dealer's up card: 7. Your hand (face value): 13. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 13. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 13. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 13. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 13. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: 3. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: 4. Your hand (face value): 12. Optimal play: Stay.
+Dealer's up card: 5. Your hand (face value): 12. Optimal play: Stay.
+Dealer's up card: 6. Your hand (face value): 12. Optimal play: Stay.
+Dealer's up card: 7. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 12. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 3. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 4. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 5. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 6. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 7. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 8. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 9. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: 10. Your hand (face value): 11. Optimal play: Double Down.
+Dealer's up card: A. Your hand (face value): 11. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 3. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 4. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 5. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 6. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 7. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 8. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 9. Your hand (face value): 10. Optimal play: Double Down.
+Dealer's up card: 10. Your hand (face value): 10. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 10. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 9. Optimal play: Hit.
+Dealer's up card: 3. Your hand (face value): 9. Optimal play: Double Down.
+Dealer's up card: 4. Your hand (face value): 9. Optimal play: Double Down.
+Dealer's up card: 5. Your hand (face value): 9. Optimal play: Double Down.
+Dealer's up card: 6. Your hand (face value): 9. Optimal play: Double Down.
+Dealer's up card: 7. Your hand (face value): 9. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 9. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 9. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 9. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 9. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 3. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 4. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 5. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 6. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 7. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 8. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 3. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 4. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 5. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 6. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 7. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 7. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 3. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 4. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 5. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 6. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 7. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 6. Optimal play: Hit.
+Dealer's up card: 2. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 3. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 4. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 5. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 6. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 7. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 8. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 9. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: 10. Your hand (face value): 5. Optimal play: Hit.
+Dealer's up card: A. Your hand (face value): 5. Optimal play: Hit.
+"Dealer's up card: 2. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 3. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 4. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 5. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 6. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 7. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 8. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 9. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 10. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: A. Your cards: Ace, 10. Optimal play: Stay."
+"Dealer's up card: 2. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 3. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 4. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 5. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 6. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 7. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 8. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 9. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 10. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: A. Your cards: Ace, 9. Optimal play: Stay."
+"Dealer's up card: 2. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 3. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 4. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 5. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 6. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 7. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 8. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 9. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 10. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: A. Your cards: Ace, 8. Optimal play: Stay."
+"Dealer's up card: 2. Your cards: Ace, 7. Optimal play: Stay."
+"Dealer's up card: 3. Your cards: Ace, 7. Optimal play: Double Down."
+"Dealer's up card: 4. Your cards: Ace, 7. Optimal play: Double Down."
+"Dealer's up card: 5. Your cards: Ace, 7. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: Ace, 7. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: Ace, 7. Optimal play: Stay."
+"Dealer's up card: 8. Your cards: Ace, 7. Optimal play: Stay."
+"Dealer's up card: 9. Your cards: Ace, 7. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: Ace, 7. Optimal play: Hit."
+"Dealer's up card: A. Your cards: Ace, 7. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: Ace, 6. Optimal play: Hit."
+"Dealer's up card: 3. Your cards: Ace, 6. Optimal play: Double Down."
+"Dealer's up card: 4. Your cards: Ace, 6. Optimal play: Double Down."
+"Dealer's up card: 5. Your cards: Ace, 6. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: Ace, 6. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: Ace, 6. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: Ace, 6. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: Ace, 6. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: Ace, 6. Optimal play: Hit."
+"Dealer's up card: A. Your cards: Ace, 6. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: 3. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: 4. Your cards: Ace, 5. Optimal play: Double Down."
+"Dealer's up card: 5. Your cards: Ace, 5. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: Ace, 5. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: A. Your cards: Ace, 5. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: 3. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: 4. Your cards: Ace, 4. Optimal play: Double Down."
+"Dealer's up card: 5. Your cards: Ace, 4. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: Ace, 4. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: A. Your cards: Ace, 4. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 3. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 4. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 5. Your cards: Ace, 3. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: Ace, 3. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: A. Your cards: Ace, 3. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 3. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 4. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 5. Your cards: Ace, 2. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: Ace, 2. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: A. Your cards: Ace, 2. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 3. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 4. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 5. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 6. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 7. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 8. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 9. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 10. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: A. Your cards: Ace, Ace. Optimal play: Split."
+"Dealer's up card: 2. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 3. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 4. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 5. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 6. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 7. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 8. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 9. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 10. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: A. Your cards: 10, 10. Optimal play: Stay."
+"Dealer's up card: 2. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 3. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 4. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 5. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 9, 9. Optimal play: Stay."
+"Dealer's up card: 8. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 9. Your cards: 9, 9. Optimal play: Split."
+"Dealer's up card: 10. Your cards: 9, 9. Optimal play: Stay."
+"Dealer's up card: A. Your cards: 9, 9. Optimal play: Stay."
+"Dealer's up card: 2. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 3. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 4. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 5. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 8. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 9. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 10. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: A. Your cards: 8, 8. Optimal play: Split."
+"Dealer's up card: 2. Your cards: 7, 7. Optimal play: Split."
+"Dealer's up card: 3. Your cards: 7, 7. Optimal play: Split."
+"Dealer's up card: 4. Your cards: 7, 7. Optimal play: Split."
+"Dealer's up card: 5. Your cards: 7, 7. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 7, 7. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 7, 7. Optimal play: Split."
+"Dealer's up card: 8. Your cards: 7, 7. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: 7, 7. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: 7, 7. Optimal play: Hit."
+"Dealer's up card: A. Your cards: 7, 7. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: 6, 6. Optimal play: Split."
+"Dealer's up card: 3. Your cards: 6, 6. Optimal play: Split."
+"Dealer's up card: 4. Your cards: 6, 6. Optimal play: Split."
+"Dealer's up card: 5. Your cards: 6, 6. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 6, 6. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 6, 6. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: 6, 6. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: 6, 6. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: 6, 6. Optimal play: Hit."
+"Dealer's up card: A. Your cards: 6, 6. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 3. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 4. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 5. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 6. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 7. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 8. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 9. Your cards: 5, 5. Optimal play: Double Down."
+"Dealer's up card: 10. Your cards: 5, 5. Optimal play: Hit."
+"Dealer's up card: A. Your cards: 5, 5. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 3. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 4. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 5. Your cards: 4, 4. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 4, 4. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 8. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: A. Your cards: 4, 4. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: 3, 3. Optimal play: Split."
+"Dealer's up card: 3. Your cards: 3, 3. Optimal play: Split."
+"Dealer's up card: 4. Your cards: 3, 3. Optimal play: Split."
+"Dealer's up card: 5. Your cards: 3, 3. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 3, 3. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 3, 3. Optimal play: Split."
+"Dealer's up card: 8. Your cards: 3, 3. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: 3, 3. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: 3, 3. Optimal play: Hit."
+"Dealer's up card: A. Your cards: 3, 3. Optimal play: Hit."
+"Dealer's up card: 2. Your cards: 2, 2. Optimal play: Split."
+"Dealer's up card: 3. Your cards: 2, 2. Optimal play: Split."
+"Dealer's up card: 4. Your cards: 2, 2. Optimal play: Split."
+"Dealer's up card: 5. Your cards: 2, 2. Optimal play: Split."
+"Dealer's up card: 6. Your cards: 2, 2. Optimal play: Split."
+"Dealer's up card: 7. Your cards: 2, 2. Optimal play: Split."
+"Dealer's up card: 8. Your cards: 2, 2. Optimal play: Hit."
+"Dealer's up card: 9. Your cards: 2, 2. Optimal play: Hit."
+"Dealer's up card: 10. Your cards: 2, 2. Optimal play: Hit."
+"Dealer's up card: A. Your cards: 2, 2. Optimal play: Hit."

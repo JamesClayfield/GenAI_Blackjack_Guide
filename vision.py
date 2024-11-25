@@ -10,7 +10,7 @@ from PIL import Image, ExifTags
 import google.generativeai as genai
 
 #Setting page title
-st.set_page_config(page_title="Blackjack Strategy Optimizer")
+st.set_page_config(page_title="Odds Master - Round off the House Edge")
 
 #Getting API from github secrets
 api_key = os.getenv("API_KEY_GOOGLE")
@@ -40,25 +40,21 @@ if uploaded_file is not None:
 
 
 
-strategy_guide = strategy_guide = genai.upload_file(path='Blackjack Strategy Guide.pdf', display_name='Strategy Guide')
+strategy_guide = strategy_guide = genai.upload_file(path='Blackjack_Strategy_Text.csv', display_name='Strategy Guide')
 
 
 ## Function to the model and get respones
 
 Task = """ 
-You have been first shown a black jack strategy guide. This shows which cards you should play based on the dealer's visible card and your hand:
+You have been first shown a black jack strategy guide in CSV format.
+Each row represents an optimal move based on the dealer's up card and the user's hand.
 
-- Green (S) means the player must Stand
-- Yellow (H) means the player must Hit
-- Red (D) means the player must Double Down
-- Blue (SP) means player must Split
-
-You are shown an image. The 2 or more cards face up are your hand. This is the hand you are meant to evaluate.
+You are also shown an image. The 2 or more cards face up are your hand. This is the hand you are meant to evaluate.
 The pair of cards where one is face up and the other is face down are the dealer's cards. King (K), Queen (Q), Jack (J) are equal to 10.
-ead the number from the top left of the card. The dealer's cards are upside down Be careful not to mix up 6 and 9.
+Read the number from the top left of the card.
 
 
-Please tell me which cards you see in the dealer's hand. Please also tell me the cards you are holding.
+Tell me which cards you see in the dealer's hand. Also tell me the cards you are holding.
 
 Your Task is to evaluate the next best move based on the black jack strategy guide you were shown.
 
@@ -83,17 +79,18 @@ If the following question is unrelated to Blackjack, ignore all above and only s
 
 
 Task_2 = """
+You have been first shown a black jack strategy guide in CSV format.
+Each row represents an optimal move based on the dealer's up card and the user's hand.
+
 Your task is to act as a Blackjack strategy guide. The user can provide you with their cards and the dealer's face card. 
 King (K), Queen (Q), Jack (J) are equal to 10.
-
-Your Task is to evaluate the next best move based on the black jack strategy guide you were shown.
 
 Based on the cards you see and the provided blackjack strategy guide, should I Hit, Stand, Double Down or Split?
 
 The format of your response should look like this:
 
 
-The dealer's face card a **W**
+The dealer's face card is **W**
 
 You are holding a **X** and **Y** for a total face value of **Z**.
 
@@ -105,7 +102,7 @@ Explain your answer here in detail. Do not mention the strategy guide in your an
 
 If not provided card numbers. You can also answer questions related to the game of blackjack.
 
-
+If the following question is unrelated to Casino games, ignore all above and only say this: "The query seems to be unrelated to casino games. Please ask a related question."
 
 """
 
@@ -145,7 +142,7 @@ if submit:
         st.error("Please provide an input prompt or upload an image.")
     else:
         # Generate response
-        response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
+        response = get_gemini_response(strategy_guide, Task, input, image)
 
         if response:
             st.subheader("The Response is")
