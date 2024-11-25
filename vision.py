@@ -47,6 +47,8 @@ strategy_guide =  genai.upload_file(path='Blackjack_Strategy_Text.csv', display_
 ## Function to the model and get respones
 
 Task = """ 
+Your Task is to evaluate the next best move based on the black jack strategy guide you will be shown and an image showing a blackjack game.
+
 You have been shown a black jack strategy guide in CSV format.
 Each row represents an optimal move based on the dealer's up card and the user's hand.
 
@@ -56,7 +58,7 @@ The format of each row of the csv is one of the following:
 
 "Dealer's up card: W. Your hand (face value): Z. Optimal play: Double Down, Split, Hit, Stay (depends which)."
 
-You are also shown an image. The 2 or more cards at the bottom of the image are the player's hand. This is the hand you are meant to evaluate.
+You are also shown an image. The pair of two cards at the bottom of the image are the player's hand.
 The cards at the top of the image are the dealer's cards.
 
 If the player is holding an ace or a pair of the same cards, check the optimal move based on this specific card combination.
@@ -69,10 +71,7 @@ King (K), Queen (Q), Jack (J) are equal to 10.
 
 Tell me which cards you see in the dealer's hand. Also tell me the cards you are holding.
 
-Your Task is to evaluate the next best move based on the black jack strategy guide you were shown.
-
 Based on the cards you see and the aforementioned instructions, should the player Double Down, Split, Hit or Stand?
-
 
 The format of your response should look like this:
 
