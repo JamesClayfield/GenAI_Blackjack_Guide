@@ -114,12 +114,12 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image.", use_column_width=True)
+        #st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
         
         if input!="":
             response = flash.generate_content([strategy_guide, Task, input], image)
         else:
-            response = model.generate_content([strategy_guide, Task], image)
+            response = flash.generate_content([strategy_guide, Task], image)
 
     elif uploaded_file is None:
         if input!="":
