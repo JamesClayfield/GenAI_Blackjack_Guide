@@ -130,7 +130,8 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
     pro = genai.GenerativeModel('gemini-1.5-pro')
 
     if uploaded_file is not None:
-        image = Image.open(uploaded_file)
+        image = Image.open(uploaded_file).rotate(-90, expand=True)
+
         st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
         
         if input!="":
