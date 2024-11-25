@@ -55,12 +55,12 @@ The format of each row of the csv is one of the following:
 
 "Dealer's up card: W. Your hand (face value): Z. Optimal play: Double Down, Split, Hit, Stay (depends which)."
 
+You are also shown an image. The 2 or more cards at the bottom of the image are the player's hand. This is the hand you are meant to evaluate.
+The cards at the top of the image are the dealer's cards.
+
 If the player is holding an ace or a pair of the same cards, check the optimal move based on this specific card combination.
 
 It it is not a listed combination, check for the face value to find the optimal move.
-
-You are also shown an image. The 2 or more cards at the bottom of the image are the player's hand. This is the hand you are meant to evaluate.
-The cards at the top of the image are the dealer's cards.
 
 
 King (K), Queen (Q), Jack (J) are equal to 10.
