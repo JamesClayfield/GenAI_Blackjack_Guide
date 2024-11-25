@@ -119,9 +119,9 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
         #st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
         
         if input!="":
-            response = flash.generate_content([strategy_guide, Task, input, image])
+            response = pro.generate_content([strategy_guide, Task, input, image])
         else:
-            response = flash.generate_content([strategy_guide, Task, image])
+            response = pro.generate_content([strategy_guide, Task, image])
 
     elif uploaded_file is None:
         if input!="":
