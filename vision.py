@@ -40,7 +40,7 @@ if uploaded_file is not None:
 
 
 
-strategy_guide = strategy_guide = genai.upload_file(path='Blackjack_Strategy_Text.csv', display_name='Strategy Guide')
+strategy_guide =  genai.upload_file(path='Blackjack_Strategy_Text.csv', display_name='Strategy Guide')
 
 
 ## Function to the model and get respones
@@ -84,10 +84,16 @@ Task_2 = """
 You have been first shown a black jack strategy guide in CSV format.
 Each row represents an optimal move based on the dealer's up card and the user's hand.
 
+The format of each row is one of the following:
+
+"Dealer's up card: W. Your hand (face value): Z. Optimal play: Hit, Stay, Double Down, Split (depends which)."
+
+"Dealer's up card: W. Your cards: X, Y. Optimal play: Hit, Stay, Double Down, Split (depends which)."
+
 Your task is to act as a Blackjack strategy guide. The user can provide you with their cards and the dealer's face card. 
 King (K), Queen (Q), Jack (J) are equal to 10.
 
-Based on the cards you see and the provided blackjack strategy guide, should I Hit, Stand, Double Down or Split?
+Based on the cards you see and the provided blackjack strategy guide CSV, should I Hit, Stand, Double Down or Split?
 
 The format of your response should look like this:
 
