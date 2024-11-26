@@ -277,7 +277,6 @@ if submit:
         f"""
         <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; background-color: #f9f9f9;">
             {response}
-        </div>
         """,
         unsafe_allow_html=True
     )
