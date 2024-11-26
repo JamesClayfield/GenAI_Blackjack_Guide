@@ -63,7 +63,7 @@ Your task is to evaluate the next best move in a blackjack game based on the inf
      - Ace (A) can be valued as **1** or **11** based on the game state.
 
 2. **Game Image**: 
-   - The **player's hand** is the two cards at the bottom of the image.
+   - The **player's hand** is the two or more cards at the bottom of the image.
    - The **dealer's hand** is the cards at the top of the image.
 
 ## Instructions:
