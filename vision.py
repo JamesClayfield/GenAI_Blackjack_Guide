@@ -121,10 +121,10 @@ st.markdown(
             <h4 style="color: white;">Your personal casino strategist.</h4>
             <br>
             <p>To receive a prediction, please provide a photo of the blackjack game with your cards in the foreground and the dealer's hand in the background.</p>
-            <p>Alternatively, you can input your cards and the dealer's cards in the text box.</p>
+            <p>Alternatively, you can input your cards and the dealer's cards in the text box below.</p>
             <p>You can also ask Odds Master anything you would like to know about Blackjack.</p>
             <br>
-            <p>Click "Advise me" to get the best move! 💰</p>
+            <p>💰 Click "Advise me" to get the best move! 💰</p>
         </div>
     </div>
     """,
@@ -268,7 +268,7 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
 
 
 
-submit = st.button("Advise me")
+submit = st.button("Advise me",use_container_width=True)
 
 if submit:
     response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
