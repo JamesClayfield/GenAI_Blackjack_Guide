@@ -187,7 +187,7 @@ You will be shown a blackjack strategy guide in CSV format and an image of a bla
 - If no specific combination is listed, calculate the face value of the player's hand to find the optimal move.
 - Determine whether the player should *Double Down*, *Split*, *Hit*, or *Stand* based on these factors.
 
-## Output Format:
+## Output Format in markdown:
 
 The dealer's face card is **[W]**.
 
@@ -224,7 +224,7 @@ You have been provided with a blackjack strategy guide in CSV format. Each row s
   - **King (K), Queen (Q), and Jack (J)** are valued as **10**.  
   - **Ace (A)** can be valued as **1** or **11**, depending on the game state.
 
-## Output Format:
+## Output Format in markdown:
 
 The dealer's face card is **[W]**.
 
@@ -279,7 +279,6 @@ if submit:
         """,
         unsafe_allow_html=True
     )
-
 
 
 
