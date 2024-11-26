@@ -271,7 +271,15 @@ if submit:
     
     response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
     st.subheader("The Response is")
-    st.write(response)
+    st.markdown(
+        f"""
+        <div class="response-box">
+            <h4>Response:</h4>
+            <p>{response.strip()}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 
