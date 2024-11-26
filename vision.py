@@ -115,7 +115,7 @@ st.markdown(
 # Instructions Box with Emojis
 st.markdown(
     """
-    <div class="instruction-box">
+    <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #333; color: white;">
         Welcome to Odds Master! Your personal casino strategist.
         <br><br>
         If typing, be sure to include:
@@ -270,7 +270,6 @@ submit = st.button("Advise me")
 
 if submit:
     response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
-    st.subheader("The Response is")
 
     # Wrap the response in a box
     st.markdown(
@@ -278,7 +277,6 @@ if submit:
         <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #333; color: white;">
             <h2 style="color: white;">The Response is:</h2>
             {response}
-        </div>
         """,
         unsafe_allow_html=True
     )
