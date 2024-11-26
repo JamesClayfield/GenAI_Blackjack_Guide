@@ -270,30 +270,30 @@ submit = st.button("Advise me")
 if submit:
     
     response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
-st.markdown(
-    f"""
-    <style>
-        .response-box {{
-            background-color: #333333; /* Dark grey background */
-            color: white; /* White text */
-            padding: 10px; /* Add some padding for better spacing */
-            border-radius: 5px; /* Rounded corners */
-            margin-top: 10px; /* Add some spacing at the top */
-        }}
-        .response-box h4 {{
-            margin: 0; /* Remove default margin from the heading */
-        }}
-        .response-box p {{
-            margin: 5px 0 0 0; /* Adjust the margin for the paragraph */
-        }}
-    </style>
-    <div class="response-box">
-        <h4>Response:</h4>
-        <p>{response.strip()}</p>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+    st.markdown(
+        f"""
+        <style>
+            .response-box {{
+                background-color: #333333; /* Dark grey background */
+                color: white; /* White text */
+                padding: 10px; /* Add some padding for better spacing */
+                border-radius: 5px; /* Rounded corners */
+                margin-top: 10px; /* Add some spacing at the top */
+            }}
+            .response-box h4 {{
+                margin: 0; /* Remove default margin from the heading */
+            }}
+            .response-box p {{
+                margin: 5px 0 0 0; /* Adjust the margin for the paragraph */
+            }}
+        </style>
+        <div class="response-box">
+            <h4>Response:</h4>
+            <p>{response.strip()}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 
