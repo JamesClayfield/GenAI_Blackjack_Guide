@@ -191,9 +191,9 @@ You will be shown a blackjack strategy guide in CSV format and an image of a bla
 
 The dealer's face card is **[W]**.
 
-**You are holding a **[X]** and **[Y]**, for a total face value of **[Z]**.
+You are holding a **[X]** and **[Y]**, for a total face value of **[Z]**.
 
-**Based on this, you should **[Decision]**.
+Based on this, you should **[Decision]**.
 
 ## Decision Explanation:
 Provide a detailed explanation for your decision. Do not reference the strategy guide in your response.
@@ -228,9 +228,9 @@ You have been provided with a blackjack strategy guide in CSV format. Each row s
 
 The dealer's face card is **[W]**.
 
-**You are holding a **[X]** and **[Y]**, for a total face value of **[Z]**.
+You are holding a **[X]** and **[Y]**, for a total face value of **[Z]**.
 
-**Based on this, you should **[Decision]**.
+Based on this, you should **[Decision]**.
 
 ## Decision Explanation:
 Provide a detailed explanation for your decision. Do not reference the strategy guide in your response.
