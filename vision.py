@@ -251,8 +251,6 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
     if uploaded_file is not None:
         image = Image.open(uploaded_file).rotate(-90, expand=True)
 
-        st.image(image, caption="Uploaded Image.", use_column_width=True)  #Prints image I think
-        
         if input!="":
             response = pro.generate_content([strategy_guide, Task, input, image], generation_config={"temperature" : 0})
         else:
@@ -274,14 +272,23 @@ if submit:
 
     # Wrap the response in a box
     st.markdown(
-        f"""
+        """
         <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #27272F; color: white;">
             <h2 style="color: white;">The Response is:</h2>
-            {response}
+        </div>
         """,
         unsafe_allow_html=True
     )
-
+    
+    # Render the Markdown response inside the styled box
+    st.markdown(
+        f"""
+        <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #27272F; color: white;">
+            {st.markdown(response, unsafe_allow_html=False)}
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 
 
