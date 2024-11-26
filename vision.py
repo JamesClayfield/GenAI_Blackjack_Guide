@@ -34,7 +34,7 @@ def set_background(image_file):
         }}
         h3 {{
             text-align: center;
-            color: black;  /* Black for subtitle */
+            color: white;  /* Black for subtitle */
             margin-bottom: 2em;
             font-size: 2em;  /* Increased font size */
         }}
