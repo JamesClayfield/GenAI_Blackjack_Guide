@@ -235,7 +235,7 @@ The dealer's face card is **[W]**.
 Provide a detailed explanation for your decision. Do not reference the strategy guide in your response.
 
 ## Additional Notes:
-- If no card numbers are provided, you may answer general questions about blackjack rules or gameplay.
+- If no card numbers are provided, you may answer general questions about blackjack rules or gameplay. If this is the case you can ignore the output format.
 - If the query is unrelated to blackjack or casino games, respond only with:  
   **"The query seems to be unrelated to casino games. Please ask a related question."**
 
@@ -265,36 +265,13 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
     return response.text
 
 
+submit = st.button("Advise me")
 
-if st.button("Advise me"):
-    response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
-
-    # Separate the decision explanation
-    decision, explanation = response.split("Decision Explanation:", 1) if "Decision Explanation:" in response else (response, "")
-
-    # Display the latest response in side-by-side boxes
-    col1, col2 = st.columns([1, 1.5])  # Adjust proportions for better layout
-    with col1:
-        st.markdown(
-            f"""
-            <div class="response-box">
-                <h4>Response:</h4>
-                <p>{decision.strip()}</p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-    with col2:
-        st.markdown(
-            f"""
-            <div class="response-box">
-                <h4>Decision Explanation:</h4>
-                <p>{explanation.strip()}</p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
+if submit:
+    
+    response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
+    st.subheader("The Response is")
+    st.write(response)
 
 
 
