@@ -271,25 +271,26 @@ if submit:
     
     response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
     st.markdown(
-        f"""
+        """
         <style>
-            .response-box {{
+            .response-box {
                 background-color: #333333; /* Dark grey background */
                 color: white; /* White text */
-                padding: 10px; /* Add some padding for better spacing */
+                padding: 15px; /* Add some padding for better spacing */
                 border-radius: 5px; /* Rounded corners */
-                margin-top: 10px; /* Add some spacing at the top */
-            }}
-            .response-box h4 {{
-                margin: 0; /* Remove default margin from the heading */
-            }}
-            .response-box p {{
-                margin: 5px 0 0 0; /* Adjust the margin for the paragraph */
-            }}
+                margin-top: 10px; /* Add spacing above the box */
+                overflow-wrap: break-word; /* Ensure text wraps properly */
+            }
         </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Wrap your response content inside the styled box
+    st.markdown(
+        f"""
         <div class="response-box">
-            <h4>Response:</h4>
-            <p>{response.strip()}</p>
+            {response.strip()}
         </div>
         """,
         unsafe_allow_html=True,
