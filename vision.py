@@ -12,9 +12,6 @@ import google.generativeai as genai
 #Setting page title
 st.set_page_config(page_title="Odds Master - Round off the House Edge")
 
-# Setting the page title and layout
-st.set_page_config(page_title="Odds Master - Round off the House Edge")
-
 # Function to set the background image and title styles
 def set_background(image_file):
     with open(image_file, "rb") as file:
