@@ -274,12 +274,14 @@ if submit:
         """
         <style>
             .response-box {
-                background-color: #333333; /* Dark grey background */
-                color: white; /* White text */
-                padding: 15px; /* Add some padding for better spacing */
-                border-radius: 5px; /* Rounded corners */
-                margin-top: 10px; /* Add spacing above the box */
-                overflow-wrap: break-word; /* Ensure text wraps properly */
+                background-color: #333333 !important; /* Explicit dark grey */
+                color: white !important; /* Explicit white text */
+                padding: 15px;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+            body {
+                background: none !important; /* Reset background effects */
             }
         </style>
         """,
