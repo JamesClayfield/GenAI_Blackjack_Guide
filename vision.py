@@ -115,7 +115,7 @@ st.markdown(
 # Instructions Box with Emojis
 st.markdown(
     """
-    <div style="display: flex; justify-content: center; align-items: center; text-align: center; border: 1px solid #444; border-radius: 5px; padding: 20px; background-color: #282434; color: white;">
+    <div style="display: flex; justify-content: center; align-items: center; text-align: center; border: 1px solid #444; border-radius: 5px; padding: 20px; background-color: #27272F; color: white;">
         <div>
             <h4 style="color: white;">Your personal casino strategist.</h4>
             <br>
@@ -275,7 +275,7 @@ if submit:
     # Wrap the response in a box
     st.markdown(
         f"""
-        <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #282434; color: white;">
+        <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #27272F; color: white;">
             <h2 style="color: white;">The Response is:</h2>
             {response}
         """,
