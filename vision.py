@@ -108,7 +108,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    "<h3>Round off the House Edge ❤️ ♣️</h3>",
+    "<h3>❤️ Round off the House Edge ♣️</h3>",
     unsafe_allow_html=True,
 )
 
@@ -116,7 +116,11 @@ st.markdown(
 st.markdown(
     """
     <div class="instruction-box">
-        Welcome to Odds Master! 🃏 You can either upload an image of your blackjack hand or type the details of your play.
+        Welcome to Odds Master! 
+
+        Your personal casino strategist.
+
+        You can either upload an image of your blackjack hand or type the details of your play.
         <br><br>
         If typing, be sure to include:
         <p>♣️ Your cards</p>
