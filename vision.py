@@ -276,6 +276,7 @@ if submit:
     st.markdown(
         f"""
         <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #333; color: white;">
+        ## The response is:
             {response}
         """,
         unsafe_allow_html=True
