@@ -275,7 +275,7 @@ if submit:
     # Wrap the response in a box
     st.markdown(
         f"""
-        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; background-color: #f9f9f9;">
+        <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #333; color: white;">
             {response}
         """,
         unsafe_allow_html=True
