@@ -272,7 +272,7 @@ if submit:
 
     # Wrap the response in a box
     st.markdown(
-        """
+        f"""
         <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #27272F; color: white;">
             <h2 style="color: white;">The Response is:</h2>
             {st.markdown(response, unsafe_allow_html=False)}
