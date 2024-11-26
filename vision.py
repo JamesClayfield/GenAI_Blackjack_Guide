@@ -273,19 +273,12 @@ if submit:
     # Wrap the response in a box
     st.markdown(
         f"""
-        <div style="border: 1px solid #444; border-radius: 5px; padding: 20px; background-color: #27272F; color: white;">
-            <h2 style="color: white; text-align: center;">The Response is:</h2>
-            <div style="padding: 10px;">
+        <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #27272F; color: white;">
+            <h2 style="color: white;">The Response is:</h2>
+            {response}
         """,
         unsafe_allow_html=True
     )
-
-    # Render the response Markdown within the box
-    st.markdown(response, unsafe_allow_html=False)
-
-    # Close the outer div
-    st.markdown("</div></div>", unsafe_allow_html=True)
-
 
 
 
