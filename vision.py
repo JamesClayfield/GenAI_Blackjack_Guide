@@ -102,6 +102,31 @@ st.markdown(
 )
 
 
+# Header and Introduction with Emojis
+st.markdown(
+    "<h1>♠️ Odds Master ♦️</h1>",
+    unsafe_allow_html=True,
+)
+st.markdown(
+    "<h3>Round off the House Edge ❤️ ♣️</h3>",
+    unsafe_allow_html=True,
+)
+
+# Instructions Box with Emojis
+st.markdown(
+    """
+    <div class="instruction-box">
+        Welcome to Odds Master! 🃏 You can either upload an image of your blackjack hand or type the details of your play.
+        <br><br>
+        If typing, be sure to include:
+        <p>♣️ Your cards</p>
+        <p>♦️ The dealer's visible card</p>
+        <br>
+        Click "Advise me" to get the best move! 💰
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 
 
@@ -113,12 +138,6 @@ api_key = os.getenv("API_KEY_GOOGLE")
 genai.configure(api_key=api_key)
 
 
-st.header("Odds Master")
-
-st.markdown("""
-Round off the House Edge
-
-    """)
 
 #User prompt is input here
 input = st.text_input("Input Prompt: ",key="input")
