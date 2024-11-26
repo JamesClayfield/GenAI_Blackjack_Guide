@@ -12,6 +12,102 @@ import google.generativeai as genai
 #Setting page title
 st.set_page_config(page_title="Odds Master - Round off the House Edge")
 
+# Setting the page title and layout
+st.set_page_config(page_title="Odds Master - Round off the House Edge")
+
+# Function to set the background image and title styles
+def set_background(image_file):
+    with open(image_file, "rb") as file:
+        encoded_image = base64.b64encode(file.read()).decode()
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background: url(data:image/jpg;base64,{encoded_image});
+            background-size: cover;
+            background-position: center;
+        }}
+        h1 {{
+            text-align: center;
+            color: white;  /* White color for title */
+            font-size: 5em;  /* Larger font size */
+            font-weight: bold;  /* Bold for Odds Master */
+            margin-top: 20px;  /* Adds a small margin at the top */
+        }}
+        h3 {{
+            text-align: center;
+            color: black;  /* Black for subtitle */
+            margin-bottom: 2em;
+            font-size: 2em;  /* Increased font size */
+        }}
+        .instruction-box {{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }}
+        .input-container {{
+            text-align: center;
+        }}
+        .input-container .stTextInput, .input-container .stFileUploader {{
+            font-size: 1.2em;  /* Larger font size */
+            width: 80% !important;  /* Center the inputs */
+            margin: auto;
+        }}
+        .response-box {{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }}
+        .response-box h4 {{
+            margin-bottom: 10px;
+            color: black;
+            font-size: 2.5em;  /* Increased font size for headers */
+            font-weight: bold;  /* Bold header */
+        }}
+        .response-box p {{
+            color: black;
+            font-size: 1.2em;  /* Slightly larger font for the text */
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Set the background image
+set_background("gambling_table.jpg")
+
+# Managing spaces
+st.markdown(
+    """
+    <style>
+    .instruction-box {
+        margin-bottom: 5px !important; /* Reduces space after the instructions box */
+    }
+    .stTextInput, .stFileUploader {
+        margin-bottom: 5px !important; /* Reduces space between input fields */
+    }
+    .stButton {
+        margin-top: -5px !important; /* Pulls the button closer to the file uploader */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+
+
+
+
 #Getting API from github secrets
 api_key = os.getenv("API_KEY_GOOGLE")
 
@@ -48,7 +144,8 @@ strategy_guide =  genai.upload_file(path='Blackjack_Strategy_Text.csv', display_
 Task = """ 
 # Blackjack Move Evaluation Task
 
-Your task is to evaluate the next best move in a blackjack game based on the information provided. You will be shown a blackjack strategy guide in CSV format and an image of a blackjack game. 
+Your task is to evaluate the next best move in a blackjack game based on the information provided. 
+You will be shown a blackjack strategy guide in CSV format and an image of a blackjack game. 
 
 ## Inputs:
 1. **Blackjack Strategy Guide (CSV)**: 
@@ -150,13 +247,37 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
             response = "No Question was input. Please ask a question."
     return response.text
 
-submit = st.button("Advise me")
 
-if submit:
-    
-    response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
-    st.subheader("The Response is")
-    st.write(response)
+
+if st.button("Advise me"):
+    response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
+
+    # Separate the decision explanation
+    decision, explanation = response.split("Decision Explanation:", 1) if "Decision Explanation:" in response else (response, "")
+
+    # Display the latest response in side-by-side boxes
+    col1, col2 = st.columns([1, 1.5])  # Adjust proportions for better layout
+    with col1:
+        st.markdown(
+            f"""
+            <div class="response-box">
+                <h4>Response:</h4>
+                <p>{decision.strip()}</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+    with col2:
+        st.markdown(
+            f"""
+            <div class="response-box">
+                <h4>Decision Explanation:</h4>
+                <p>{explanation.strip()}</p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
 
 
 
