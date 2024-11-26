@@ -116,8 +116,8 @@ st.markdown(
 st.markdown(
     """
     <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #333; color: white;">
-        <h2 style="color: white;">Welcome to Odds Master! Your personal casino strategist.</h2>
-        <h4 style="color: white;">Welcome to Odds Master! Your personal casino strategist.</h4>
+        <h2 style="color: white;">Welcome to Odds Master!</h2>
+        <h4 style="color: white;">Your personal casino strategist.</h4>
         <br>
         To receive a prediction, please provide a photo of the blackjack game with your cards in the foreground and the dealer's hand in the background.
         <p>Alternatively, you can input your cards and the dealer's cards in the text box</p>
