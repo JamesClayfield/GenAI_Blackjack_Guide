@@ -265,41 +265,22 @@ def get_gemini_response(strategy_guide, Task_2, Task, input, image=None):
     return response.text
 
 
+
 submit = st.button("Advise me")
 
 if submit:
-    
-    response=get_gemini_response(strategy_guide, Task_2, Task, input,image)
-    st.markdown(
-        """
-        <style>
-            .response-box {
-                background-color: #333333 !important; /* Explicit dark grey */
-                color: white !important; /* Explicit white text */
-                padding: 15px;
-                border-radius: 5px;
-                margin-top: 10px;
-            }
-            body {
-                background: none !important; /* Reset background effects */
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+    response = get_gemini_response(strategy_guide, Task_2, Task, input, image)
+    st.subheader("The Response is")
 
-    # Wrap your response content inside the styled box
+    # Wrap the response in a box
     st.markdown(
         f"""
-        <div class="response-box">
-            {response.strip()}
+        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 10px; background-color: #f9f9f9;">
+            {response}
         </div>
         """,
-        unsafe_allow_html=True,
+        unsafe_allow_html=True
     )
-
-
-
 
 
 
