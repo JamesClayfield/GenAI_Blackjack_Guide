@@ -225,8 +225,6 @@ You have been provided with a blackjack strategy guide in CSV format. Each row s
 
 ## Output Format:
 
-##The Response is:
-
 The dealer's face card is **[W]**.
 
 **You are holding a **[X]** and **[Y]**, for a total face value of **[Z]**.
@@ -278,7 +276,9 @@ if submit:
     st.markdown(
         f"""
         <div style="border: 1px solid #444; border-radius: 5px; padding: 10px; background-color: #333; color: white;">
+            <h2 style="color: white;">The Response is:</h2>
             {response}
+        </div>
         """,
         unsafe_allow_html=True
     )
