@@ -27,14 +27,14 @@ def set_background(image_file):
         }}
         h1 {{
             text-align: center;
-            color: white;  /* White color for title */
+            color: black;  /* White color for title */
             font-size: 5em;  /* Larger font size */
             font-weight: bold;  /* Bold for Odds Master */
             margin-top: 20px;  /* Adds a small margin at the top */
         }}
         h3 {{
             text-align: center;
-            color: white;  /* Black for subtitle */
+            color: black;  /* Black for subtitle */
             margin-bottom: 2em;
             font-size: 2em;  /* Increased font size */
         }}
