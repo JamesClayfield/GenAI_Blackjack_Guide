@@ -6,6 +6,7 @@ import os
 import pathlib
 import textwrap
 from PIL import Image, ExifTags
+import base64
 
 import google.generativeai as genai
 
