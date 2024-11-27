@@ -182,7 +182,7 @@ You will be shown a blackjack strategy guide in CSV format and an image of a bla
    - The **dealer's hand** is the cards at the top of the image.
 
 ## Instructions:
-- Identify the dealer's up card and the player's two cards from the image.
+- Identify the dealer's up card and the player's two or more cards from the image.
 - If the player's hand includes an Ace or a pair of identical cards, use the specific card combination for optimal play.
 - If no specific combination is listed, calculate the face value of the player's hand to find the optimal move.
 - Determine whether the player should *Double Down*, *Split*, *Hit*, or *Stand* based on these factors.
