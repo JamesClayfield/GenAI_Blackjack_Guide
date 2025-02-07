@@ -1,5 +1,7 @@
 # GenAI Blackjack Guide
 
+This project was part of the Machine Learning 2 Class I took in the MSc in Business Analytics and Big Data.
+
 This GenAI application built on the gemini API leverages gemini 1.5 flash and 1.5 pro. The Application takes an image of the game and a prompt as an input and then suggests the optimal
 blackjack move to make based on information provided via RAG. When not provided with an image the application also answers general casino game related queries.
 
